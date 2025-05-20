@@ -17,4 +17,20 @@ export class Tab2Page {
     this.router.navigate(['../la-valette']);
   }
 
+  goToDominic() {
+    this.router.navigate(['../dominic']);
+  }
+
+  goToPinto() {
+    this.router.navigate(['../pinto']);
+  }
+
+  goToStPaul() {
+    this.router.navigate(['../stpaul']);
+  }
+
+  goToDragut() {
+    this.router.navigate(['../dragut']);
+  }
+
 }

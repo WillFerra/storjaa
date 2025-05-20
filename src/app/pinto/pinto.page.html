@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-back-button defaultHref="/tabs/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Manuel Pinto de Fonseca</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">pinto</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="details-container">
+    <div class="figure-details">
+      <p><strong>Born:</strong> 1681</p>
+      <p><strong>Role:</strong> Grand Master of the Order of St. John (1741–1773)</p>
+      <p><strong>Notable:</strong> One of the longest-serving Grand Masters. Known for commissioning many public buildings, including Auberge de Castille, and founding Valletta's Pinto Market. He is remembered for his lavish style and for contributing to the Baroque transformation of Valletta.</p>
+    </div>
+    <img src="assets/pinto.jpg" class="figure-image" />
+  </div>
+
+  <h2>Location:</h2>
+  <div class="map-container">
+    <div id="map"></div>
+  </div>
+
+  <ion-button expand="block" (click)="openDirections()">
+    Get Directions
+  </ion-button>
+
+  <div>
+    <h2>AR Experience:</h2>
+    <ion-button expand="block" (click)="openAeroProject()">
+      View AR Experience
+    </ion-button>
+  </div>
+</ion-content>
