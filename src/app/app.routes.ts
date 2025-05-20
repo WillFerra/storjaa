@@ -25,4 +25,24 @@ export const routes: Routes = [
     path: 'dragut',
     loadComponent: () => import('./dragut/dragut.page').then( m => m.DragutPage)
   },
+  {
+    path: 'laparelli',
+    loadComponent: () => import('./laparelli/laparelli.page').then( m => m.LaparelliPage)
+  },
+  {
+    path: 'gilormu',
+    loadComponent: () => import('./gilormu/gilormu.page').then( m => m.GilormuPage)
+  },
+  {
+    path: 'preti',
+    loadComponent: () => import('./preti/preti.page').then( m => m.PretiPage)
+  },
+  {
+    path: 'staug',
+    loadComponent: () => import('./staug/staug.page').then( m => m.StaugPage)
+  },
+  {
+    path: 'vilhena',
+    loadComponent: () => import('./vilhena/vilhena.page').then( m => m.VilhenaPage)
+  },
 ];

@@ -33,4 +33,23 @@ export class Tab2Page {
     this.router.navigate(['../dragut']);
   }
 
+  goToLaparelli() {
+    this.router.navigate(['../laparelli']);
+  }
+
+  goToGilormu() {
+    this.router.navigate(['../gilormu']);
+  }
+
+  goToPreti() {
+    this.router.navigate(['../preti']);
+  }
+
+  goToStAug() {
+    this.router.navigate(['../staug']);
+  }
+
+  goToVilhena() {
+    this.router.navigate(['../vilhena']);
+  }
 }

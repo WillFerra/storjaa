@@ -1,0 +1,38 @@
+ion-content {
+    --padding-top: 0;
+    --padding-bottom: 0;
+}
+
+.map-scroll-container {
+    width: 100%;
+    height: 100vh; // ensures full screen height
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.map-wrapper {
+    position: relative;
+    width: 1500px; // match the map's width
+    height: 100%; // match the full height of the container
+}
+
+.map-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.map-marker {
+    position: absolute;
+    transform: translate(-50%, -100%);
+    cursor: pointer;
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+.pin-icon {
+    width: 60px;
+    height: auto;
+}

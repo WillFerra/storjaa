@@ -15,3 +15,28 @@
 
   <app-explore-container name="Tab 1 page"></app-explore-container>
 </ion-content>
+
+<ion-content fullscreen>
+  <div class="map-scroll-container">
+    <div class="map-wrapper">
+      <img src="assets/map.png" class="map-image" />
+
+      <!--  Marker -->
+      <div
+        class="map-marker"
+        style="top: 40%; left: 60%;"
+        (click)="showLaValetteAlert()"
+        >
+        <img src="../../assets/icon/location.svg" class="pin-icon" />
+      </div>
+
+      <div
+        class="map-marker"
+        style="top: 70%; left: 40%;"
+        (click)="showStDominicAlert()"
+        >
+        <img src="../../assets/icon/location.svg" class="pin-icon" />
+      </div>
+    </div>
+  </div>
+</ion-content>
