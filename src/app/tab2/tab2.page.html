@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Characters
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,111 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">Characters</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <div class="button-container">
+    <ion-grid>
+      <ion-row class="button-row" justify-content-center>
+        <ion-col size="auto">
+          <ion-button (click)="goToLaValette()" class="square-button" color="none" id="jpdv">
+            <div class="image-overlay"></div>
+            <div class="button-content">
+              <span class="button-text">Jean La Valette</span>
+            </div>
+          </ion-button>
+        </ion-col>
+
+        <ion-col size="auto">
+          <ion-button class="square-button" color="none" id="sd">
+            <div class="image-overlay"></div>
+            <div class="button-content">
+              <span class="button-text">Saint Dominic</span>
+            </div>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="button-row" justify-content-center>
+        <ion-col size="auto">
+          <ion-button class="square-button" color="none" id="pinto">
+            <div class="image-overlay"></div>
+            <div class="button-content">
+              <span class="button-text">Pinto</span>
+            </div>
+          </ion-button>
+        </ion-col>
+
+        <ion-col size="auto">
+          <ion-button class="square-button" color="none" id="sp">
+            <div class="image-overlay"></div>
+            <div class="button-content">
+              <span class="button-text">Saint Paul</span>
+            </div>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="button-row" justify-content-center>
+        <ion-col size="auto">
+          <ion-button class="square-button" color="none" id="dragut">
+            <div class="image-overlay"></div>
+            <div class="button-content">
+              <span class="button-text">Dragut</span>
+            </div>
+          </ion-button>
+        </ion-col>
+
+        <ion-col size="auto">
+          <ion-button class="square-button" color="none" id="laparelli">
+            <div class="image-overlay"></div>
+            <div class="button-content">
+              <span class="button-text">Francesco Laparelli</span>
+            </div>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="button-row" justify-content-center>
+        <ion-col size="auto">
+          <ion-button class="square-button" color="none" id="gilormu">
+            <div class="image-overlay"></div>
+            <div class="button-content">
+              <span class="button-text">Gilormu Cassar</span>
+            </div>
+          </ion-button>
+        </ion-col>
+
+        <ion-col size="auto">
+          <ion-button class="square-button" color="none" id="preti">
+            <div class="image-overlay"></div>
+            <div class="button-content">
+              <span class="button-text">Mattia Preti</span>
+            </div>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="button-row" justify-content-center>
+        <ion-col size="auto">
+          <ion-button class="square-button" color="none" id="sa">
+            <div class="image-overlay"></div>
+            <div class="button-content">
+              <span class="button-text">Saint Augustine</span>
+            </div>
+          </ion-button>
+        </ion-col>
+
+        <ion-col size="auto">
+          <ion-button class="square-button" color="none" id="vilhena">
+            <div class="image-overlay"></div>
+            <div class="button-content">
+              <span class="button-text">Vilhena</span>
+            </div>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
 </ion-content>

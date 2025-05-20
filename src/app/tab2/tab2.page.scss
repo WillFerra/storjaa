@@ -1,0 +1,89 @@
+.button-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px; /* Optional: space between buttons */
+}
+
+.square-button {
+    width: 150px;
+    height: 150px;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    --background: transparent;
+}
+
+.image-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: top;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.button-content {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-text {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Specific backgrounds */
+#jpdv .image-overlay {
+    background-image: url("../../assets/JPDV.jpg");
+}
+
+#sd .image-overlay {
+    background-image: url("../../assets/stdom.jpg");
+}
+
+#pinto .image-overlay {
+    background-image: url("../../assets/pinto.jpg");
+}
+
+#sp .image-overlay {
+    background-image: url("../../assets/stpaul.jpg");
+}
+
+#dragut .image-overlay {
+    background-image: url("../../assets/dragut.jpg.webp");
+}
+
+#laparelli .image-overlay {
+    background-image: url("../../assets/laparelli.jpg");
+}
+
+#gilormu .image-overlay {
+    background-image: url("../../assets/gilormu.jpg");
+}
+
+#preti .image-overlay {
+    background-image: url("../../assets/preti.jpg");
+}
+
+#sa .image-overlay {
+    background-image: url("../../assets/staug.jpg");
+}
+
+#vilhena .image-overlay {
+    background-image: url("../../assets/vilhena.jpg");
+}
