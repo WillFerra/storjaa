@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonCol, IonRow, IonGrid } from '@ionic/angular/standalone';
+import { IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonCol, IonRow, IonGrid, IonCardHeader, IonCard, IonCardTitle } from '@ionic/angular/standalone';
 import { ExploreContainerComponent } from '../explore-container/explore-container.component';
 import { Router } from '@angular/router'; 
 
@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   selector: 'app-tab2',
   templateUrl: 'tab2.page.html',
   styleUrls: ['tab2.page.scss'],
-  imports: [IonGrid, IonRow, IonCol, IonButton, IonHeader, IonToolbar, IonTitle, IonContent, ExploreContainerComponent]
+  imports: [IonCardTitle, IonCard, IonCardHeader, IonGrid, IonRow, IonCol, IonButton, IonHeader, IonToolbar, IonTitle, IonContent, ExploreContainerComponent]
 })
 export class Tab2Page {
 
@@ -52,4 +52,4 @@ export class Tab2Page {
   goToVilhena() {
     this.router.navigate(['../vilhena']);
   }
-}
+} 

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar, IonButton, IonButtons, IonBackButton } from '@ionic/angular/standalone';
+import { IonContent, IonHeader, IonTitle, IonToolbar, IonButton, IonButtons, IonBackButton, IonGrid, IonRow, IonCol, IonIcon } from '@ionic/angular/standalone';
 import * as L from 'leaflet';
 
 @Component({
@@ -9,7 +9,7 @@ import * as L from 'leaflet';
   templateUrl: './dominic.page.html',
   styleUrls: ['./dominic.page.scss'],
   standalone: true,
-  imports: [IonBackButton, IonButtons, IonButton, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+  imports: [IonIcon, IonCol, IonRow, IonGrid, IonBackButton, IonButtons, IonButton, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
 })
 export class DominicPage implements OnInit {
 

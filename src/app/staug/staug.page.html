@@ -1,41 +1,61 @@
+<!-- Main Page Header with back button -->
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
-        <ion-back-button defaultHref="/tabs/tab2"></ion-back-button>
+      <ion-back-button defaultHref="/tabs/tab2"></ion-back-button>
     </ion-buttons>
     <ion-title>Saint Augustine</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="ion-padding">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Saint-Aug</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<!-- Main Page Content -->
+<ion-content [fullscreen]="true" class="content-center">
 
-  <div class="details-container">
-    <div class="figure-details">
-      <p><strong>Born:</strong> 354 AD</p>
-      <p><strong>Role:</strong> Early Christian theologian and bishop </p>
-      <p><strong>Notable:</strong> While not Maltese, he is important in Christian theology and has churches and institutions in Malta named after him. He was the Bishop of Hippo and a Doctor of the Church, known for works like Confessions and The City of God.</p>
-    </div>
-    <img src="assets/staug.jpg" class="figure-image" />
+  <!-- Grid layout for image and biography text -->
+  <ion-grid>
+
+    <!-- Character Image -->
+    <ion-row>
+      <ion-col size="12" class="ion-text-center">
+        <img src="assets/staug.jpg" class="figure-image" />
+      </ion-col>
+    </ion-row>
+
+    <!-- Character Information -->
+    <ion-row>
+      <ion-col size="12">
+        <h3>Born</h3>
+        <p>354 AD</p>
+
+        <h3>Role</h3>
+        <p>Early Christian theologian and bishop</p>
+
+        <h3>Notable</h3>
+        <p>
+          While not Maltese, he is important in Christian theology and has churches and 
+          institutions in Malta named after him. He was the Bishop of Hippo and a Doctor of the Church, 
+          known for works like 'Confessions' and 'The City of God'.
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- Get Directions Button Section -->
+  <div class="action-section">
+    <h2 class="section-title">Get Directions</h2>
+    <ion-button expand="block" color="primary" shape="round" (click)="openDirections()">
+      <ion-icon name="navigate" slot="start"></ion-icon>
+      Get Directions
+    </ion-button>
   </div>
 
-  <h2>Location:</h2>
-  <div class="map-container">
-    <div id="map"></div>
-  </div>
-
-  <ion-button expand="block" (click)="openDirections()">
-    Get Directions
-  </ion-button>
-
-  <div>
-    <h2>AR Experience:</h2>
-    <ion-button expand="block" (click)="openAeroProject()">
+  <!-- AR Experience Button Section -->
+  <div class="action-section">
+    <h2 class="section-title">AR Experience</h2>
+    <ion-button expand="block" color="tertiary" shape="round" fill="outline" (click)="openAeroProject()">
+      <ion-icon name="cube" slot="start"></ion-icon>
       View AR Experience
     </ion-button>
   </div>
+
 </ion-content>

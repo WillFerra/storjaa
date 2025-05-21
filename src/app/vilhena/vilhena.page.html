@@ -1,41 +1,60 @@
+<!-- Main Page Header with back button -->
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
-        <ion-back-button defaultHref="/tabs/tab2"></ion-back-button>
+      <ion-back-button defaultHref="/tabs/tab2"></ion-back-button>
     </ion-buttons>
     <ion-title>António Manoel de Vilhena</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="ion-padding">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Saint-Dominic</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<!-- Main Page Content -->
+<ion-content [fullscreen]="true" class="content-center">
 
-  <div class="details-container">
-    <div class="figure-details">
-      <p><strong>Born:</strong> 1663</p>
-      <p><strong>Role:</strong> Grand Master of the Order of St. John (1722–1736) </p>
-      <p><strong>Notable:</strong> Founded Floriana, constructed Fort Manoel, and promoted Baroque architecture. He modernized the defenses of Malta and contributed to urban development outside Valletta.</p>
-    </div>
-    <img src="assets/vilhena.jpg" class="figure-image" />
+  <!-- Grid layout for image and biography text -->
+  <ion-grid>
+
+    <!-- Character Image -->
+    <ion-row>
+      <ion-col size="12" class="ion-text-center">
+        <img src="assets/vilhena.jpg" class="figure-image" />
+      </ion-col>
+    </ion-row>
+
+    <!-- Character Information -->
+    <ion-row>
+      <ion-col size="12">
+        <h3>Born</h3>
+        <p>1663</p>
+
+        <h3>Role</h3>
+        <p>Grand Master of the Order of St. John (1722–1736)</p>
+
+        <h3>Notable</h3>
+        <p>
+          Founded Floriana, constructed Fort Manoel, and promoted Baroque architecture. 
+          He modernized the defenses of Malta and contributed to urban development outside Valletta.
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- Get Directions Button Section -->
+  <div class="action-section">
+    <h2 class="section-title">Get Directions</h2>
+    <ion-button expand="block" color="primary" shape="round" (click)="openDirections()">
+      <ion-icon name="navigate" slot="start"></ion-icon>
+      Get Directions
+    </ion-button>
   </div>
 
-  <h2>Location:</h2>
-  <div class="map-container">
-    <div id="map"></div>
-  </div>
-
-  <ion-button expand="block" (click)="openDirections()">
-    Get Directions
-  </ion-button>
-
-  <div>
-    <h2>AR Experience:</h2>
-    <ion-button expand="block" (click)="openAeroProject()">
+  <!-- AR Experience Button Section -->
+  <div class="action-section">
+    <h2 class="section-title">AR Experience</h2>
+    <ion-button expand="block" color="tertiary" shape="round" fill="outline" (click)="openAeroProject()">
+      <ion-icon name="cube" slot="start"></ion-icon>
       View AR Experience
     </ion-button>
   </div>
+
 </ion-content>

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar, IonBackButton, IonButtons, IonButton } from '@ionic/angular/standalone';
+import { IonContent, IonHeader, IonTitle, IonToolbar, IonBackButton, IonButtons, IonButton, IonGrid, IonRow, IonCol, IonIcon } from '@ionic/angular/standalone';
 import * as L from 'leaflet';
 
 @Component({
@@ -9,7 +9,7 @@ import * as L from 'leaflet';
   templateUrl: './vilhena.page.html',
   styleUrls: ['./vilhena.page.scss'],
   standalone: true,
-  imports: [IonButton, IonButtons, IonBackButton, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+  imports: [IonIcon, IonCol, IonRow, IonGrid, IonButton, IonButtons, IonBackButton, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
 })
 export class VilhenaPage implements OnInit {
 

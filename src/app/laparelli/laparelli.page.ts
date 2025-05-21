@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar, IonButtons, IonBackButton, IonButton } from '@ionic/angular/standalone';
+import { IonContent, IonHeader, IonTitle, IonToolbar, IonButtons, IonBackButton, IonButton, IonGrid, IonRow, IonCol, IonIcon } from '@ionic/angular/standalone';
 import * as L from 'leaflet';
 
 @Component({
@@ -9,7 +9,7 @@ import * as L from 'leaflet';
   templateUrl: './laparelli.page.html',
   styleUrls: ['./laparelli.page.scss'],
   standalone: true,
-  imports: [IonButton, IonBackButton, IonButtons, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+  imports: [IonIcon, IonCol, IonRow, IonGrid, IonButton, IonBackButton, IonButtons, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
 })
 export class LaparelliPage implements OnInit {
 
