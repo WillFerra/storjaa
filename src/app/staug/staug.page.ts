@@ -12,45 +12,12 @@ import * as L from 'leaflet';
   imports: [IonIcon, IonCol, IonRow, IonGrid, IonButton, IonBackButton, IonButtons, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
 })
 export class StaugPage implements OnInit {
-private map!: L.Map;
 
   constructor() { }
 
   ngOnInit() {
   }
   
-  ionViewDidEnter() {
-    this.loadMap();
-  }
-
-  loadMap() {
-  const lat = 35.898628;
-  const lng = 14.511089;
-
-  this.map = L.map('map', {
-    center: [lat, lng], // your target coords
-    zoom: 16,
-    dragging: false,
-    zoomControl: false,
-    scrollWheelZoom: false,
-    doubleClickZoom: false,
-    boxZoom: false,
-    keyboard: false,
-    touchZoom: false,
-  });
-
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '© OpenStreetMap contributors'
-  }).addTo(this.map);
-
-  // Add a marker that opens Google Maps on click
-  const marker = L.marker([35.898628, 14.511089]).addTo(this.map);
-  marker.on('click', () => {
-    const gmapUrl = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}&travelmode=walking`;
-    window.open(gmapUrl, '_blank');
-  });
-}
-
 openDirections() {
   const lat = 35.898628;
   const lng = 14.511089;
@@ -59,7 +26,7 @@ openDirections() {
 }
 
 openAeroProject() {
-  const aeroLink = "https://adobeaero.app.link/72KgTtubxTb"; // Replace with your actual Adobe Aero link
+  const aeroLink = "https://adobeaero.app.link/72KgTtubxTb";
   window.open(aeroLink, '_blank');
 }
 }
