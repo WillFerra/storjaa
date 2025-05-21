@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Character Locations
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,7 +9,7 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">characterlocations</ion-title>
     </ion-toolbar>
   </ion-header>
 
@@ -19,24 +19,89 @@
 <ion-content fullscreen>
   <div class="map-scroll-container">
     <div class="map-wrapper">
-      <img src="assets/map.png" class="map-image" />
+      <img src="assets/vallettamap2.jpg" class="map-image" />
 
       <!--  Marker -->
       <div
         class="map-marker"
-        style="top: 40%; left: 60%;"
+        style="top: 55%; left: 28%;"
         (click)="showLaValetteAlert()"
         >
-        <img src="../../assets/icon/location.svg" class="pin-icon" />
+        <img src="../../assets/ldvalette.png" class="pin-icon" />
       </div>
 
       <div
         class="map-marker"
-        style="top: 70%; left: 40%;"
+        style="top: 55%; left: 73%;"
         (click)="showStDominicAlert()"
         >
-        <img src="../../assets/icon/location.svg" class="pin-icon" />
+        <img src="../../assets/lddominic.png" class="pin-icon" />
       </div>
+
+      <div
+        class="map-marker"
+        style="top: 48%; left: 84%;"
+        (click)="showDragutAlert()"
+        >
+        <img src="../../assets/lddragut.png" class="pin-icon" />
+      </div>
+
+      <div
+        class="map-marker"
+        style="top: 67%; left:38%;"
+        (click)="showPintoAlert()"
+        >
+        <img src="../../assets/ldpinto.png" class="pin-icon" />
+      </div>
+
+      <div
+        class="map-marker"
+        style="top: 58%; left: 36%;"
+        (click)="showLaparelliAlert()"
+        >
+        <img src="../../assets/ldlaparelli.png" class="pin-icon" />
+      </div>
+
+      <div
+        class="map-marker"
+        style="top: 43%; left: 47%;"
+        (click)="showStAugAlert()"
+        >
+        <img src="../../assets/ldaug.png" class="pin-icon" />
+      </div>
+
+      <div
+        class="map-marker"
+        style="top: 55%; left: 48%;"
+        (click)="showPretiAlert()"
+        >
+        <img src="../../assets/ldpreti.png" class="pin-icon" />
+      </div>
+
+      <div
+        class="map-marker"
+        style="top: 59%; left: 50%;"
+        (click)="showGilormuAlert()"
+        >
+        <img src="../../assets/ldgilormu.png" class="pin-icon" />
+      </div>
+
+      <div
+        class="map-marker"
+        style="top: 38%; left: 55%;"
+        (click)="showVilhenaAlert()"
+        >
+        <img src="../../assets/ldvilhena.png" class="pin-icon" />
+      </div>
+
+      <div
+        class="map-marker"
+        style="top: 65%; left: 55%;"
+        (click)="showStPaulAlert()"
+        >
+        <img src="../../assets/ldpaul.png" class="pin-icon" />
+      </div>
+
     </div>
   </div>
 </ion-content>

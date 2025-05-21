@@ -36,3 +36,24 @@ ion-content {
     width: 60px;
     height: auto;
 }
+
+.custom-alert .alert-message {
+    text-align: center;
+    padding: 0;
+}
+
+.custom-alert-content h2 {
+    margin: 0 0 16px;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.custom-alert-button {
+    background-color: #3880ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-size: 14px;
+    cursor: pointer;
+}
