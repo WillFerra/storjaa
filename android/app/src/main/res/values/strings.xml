@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<resources>
-    <string name="app_name">storjaar</string>
-    <string name="title_activity_main">storjaar</string>
-    <string name="package_name">ionic.storjaar</string>
-    <string name="custom_url_scheme">ionic.storjaar</string>
-</resources>
