@@ -1,0 +1,61 @@
+<!-- Main Page Header with back button -->
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Queen Victoria</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Main Page Content -->
+<ion-content [fullscreen]="true" class="content-center">
+
+  <!-- Grid layout for image and biography text -->
+  <ion-grid>
+
+    <!-- Character Image -->
+    <ion-row>
+      <ion-col size="12" class="ion-text-center">
+        <img src="assets/victoria.jpg" class="figure-image" />
+      </ion-col>
+    </ion-row>
+
+    <!-- Character Information -->
+    <ion-row>
+      <ion-col size="12">
+        <h3>Born</h3>
+        <p>1819</p>
+
+        <h3>Role</h3>
+        <p>Queen of the United Kingdom (1837–1901), Empress of India</p>
+
+        <h3>Notable</h3>
+        <p>
+          Queen Victoria granted Malta limited self-government in 1887, allowing the use of the Maltese l
+          anguage in courts and education. Her Golden Jubilee was widely celebrated, leading to the naming 
+          of Victoria in Gozo and Victoria Gate in Valletta. A statue of her still stands in Republic Square, Valletta.
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- Get Directions Button Section -->
+  <div class="action-section">
+    <h2 class="section-title">Get Directions</h2>
+    <ion-button expand="block" color="primary" shape="round" (click)="openDirections()">
+      <ion-icon name="navigate" slot="start"></ion-icon>
+      Get Directions
+    </ion-button>
+  </div>
+
+  <!-- AR Experience Button Section -->
+  <div class="action-section">
+    <h2 class="section-title">AR Experience</h2>
+    <ion-button expand="block" color="tertiary" shape="round" fill="outline" (click)="openAeroProject()">
+      <ion-icon name="cube" slot="start"></ion-icon>
+      View AR Experience
+    </ion-button>
+  </div>
+
+</ion-content>

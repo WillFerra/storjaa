@@ -52,4 +52,12 @@ export class Tab2Page {
   goToVilhena() {
     this.router.navigate(['../vilhena']);
   }
+
+  goToVic() {
+    this.router.navigate(['../queenvic']);
+  }
+
+  goToMadonna() {
+    this.router.navigate(['../madonna']);
+  }
 } 

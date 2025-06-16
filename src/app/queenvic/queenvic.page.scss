@@ -1,0 +1,53 @@
+/* Center content inside the ion-content */
+.content-center {
+    display: flex;
+    flex-direction: column; // ensures vertical stacking
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    --padding-start: 16px;
+    --padding-end: 16px;
+}
+
+/* Styles for the main figure image */
+.figure-image {
+    width: 190px;
+    height: auto;
+    border-radius: 12px;
+    margin: 0 auto 24px auto; // center image and add bottom spacing
+    display: block;
+}
+
+/* Page section styling for both Directions and AR Experience */
+.action-section {
+    text-align: center;
+    margin-top: 24px;
+}
+
+/* Section titles for buttons */
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+/* General styling for all ion-buttons */
+ion-button {
+    margin: 0 auto;
+    max-width: 300px;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+/* Styling the ion-title in the toolbar */
+ion-title {
+    font-size: 1.5rem;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+/* Center paragraph text */
+p {
+    text-align: center;
+}

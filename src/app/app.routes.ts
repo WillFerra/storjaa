@@ -45,4 +45,12 @@ export const routes: Routes = [
     path: 'vilhena',
     loadComponent: () => import('./vilhena/vilhena.page').then( m => m.VilhenaPage)
   },
+  {
+    path: 'queenvic',
+    loadComponent: () => import('./queenvic/queenvic.page').then( m => m.QueenvicPage)
+  },
+  {
+    path: 'madonna',
+    loadComponent: () => import('./madonna/madonna.page').then( m => m.MadonnaPage)
+  },
 ];

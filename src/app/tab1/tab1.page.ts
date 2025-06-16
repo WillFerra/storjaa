@@ -214,5 +214,45 @@ export class Tab1Page {
     await alert.present();
   }
 
+    async showVicAlert() {
+      const alert = await this.alertController.create({
+        header: 'Queen Victoria',
+        message: 'In Republic Square, Valletta',
+        buttons: [
+        {
+          text: 'Go to Character',
+          handler: () => {
+            // This navigates to tab 2 — adjust as needed
+            this.router.navigate(['/queenvic'], {
+              queryParams: { character: 'Queen Victoria' }
+            });
+          }
+        },
+      ]
+    });
+
+    await alert.present();
+  }
+
+    async showMadonnaAlert() {
+      const alert = await this.alertController.create({
+        header: 'Our Lady of Mount Carmel',
+        message: 'Near Our Lady of Mount Carmel Church, Valletta',
+        buttons: [
+        {
+          text: 'Go to Character',
+          handler: () => {
+            // This navigates to tab 2 — adjust as needed
+            this.router.navigate(['/madonna'], {
+              queryParams: { character: 'Our Lady of Mount Carmel' }
+            });
+          }
+        },
+      ]
+    });
+
+    await alert.present();
+  }
+
 }
 

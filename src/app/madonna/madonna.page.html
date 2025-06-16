@@ -1,0 +1,63 @@
+<!-- Main Page Header with back button -->
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab2"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Our Lady of Mount Carmel</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Main Page Content -->
+<ion-content [fullscreen]="true" class="content-center">
+
+  <!-- Grid layout for image and biography text -->
+  <ion-grid>
+
+    <!-- Character Image -->
+    <ion-row>
+      <ion-col size="12" class="ion-text-center">
+        <img src="assets/carmel.png" class="figure-image" />
+      </ion-col>
+    </ion-row>
+
+    <!-- Character Information -->
+    <ion-row>
+      <ion-col size="12">
+        <h3>Date of Origin</h3>
+        <p>Devotion began in the 12th century</p>
+
+        <h3>Role</h3>
+        <p>Title given to the Virgin Mary as patroness of the Carmelite Order</p>
+
+        <h3>Notable</h3>
+        <p>
+          Our Lady of Mount Carmel is a deeply venerated Marian title in Malta, especially among the Carmelite 
+          communities. She is the patroness of the Carmelite Church in Valletta, known for its iconic dome and rich 
+          religious heritage. The devotion is celebrated annually on July 16, drawing large crowds and processions. 
+          The title symbolizes protection, contemplation, and spiritual guidance, and holds a special place in Maltese 
+          Catholic tradition.
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- Get Directions Button Section -->
+  <div class="action-section">
+    <h2 class="section-title">Get Directions</h2>
+    <ion-button expand="block" color="primary" shape="round" (click)="openDirections()">
+      <ion-icon name="navigate" slot="start"></ion-icon>
+      Get Directions
+    </ion-button>
+  </div>
+
+  <!-- AR Experience Button Section -->
+  <div class="action-section">
+    <h2 class="section-title">AR Experience</h2>
+    <ion-button expand="block" color="tertiary" shape="round" fill="outline" (click)="openAeroProject()">
+      <ion-icon name="cube" slot="start"></ion-icon>
+      View AR Experience
+    </ion-button>
+  </div>
+
+</ion-content>
